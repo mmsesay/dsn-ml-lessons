@@ -7,7 +7,7 @@ accuracies = []
 for i in range(25):
 
     # read the data
-    df =  pd.read_csv('../breast_cancer/breast-cancer-wisconsin.data.txt')
+    df =  pd.read_csv('./datasets/breast_cancer/breast-cancer-wisconsin.data.txt')
     df.replace('?', -99999, inplace=True)  # replace all missing values
     df.drop(['id'], 1, inplace=True)  # drop the ID from the data
 
